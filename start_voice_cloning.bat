@@ -2,6 +2,6 @@
 echo Starting Voice Cloning UI...
 echo.
 cd /d %~dp0
-call venv\Scripts\activate.bat
+call "%~dp0venv311\Scripts\activate.bat"
 python app.py
 pause

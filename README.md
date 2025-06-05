@@ -16,7 +16,7 @@ This package contains everything you need to run Chatterbox Voice Cloning locall
 4. Wait for the UI to launch in your browser
 
 ## Requirements
-- Python 3.8 or higher
+- Python 3.11 ONLY (application will not run on other versions)
 - CUDA-compatible GPU recommended for faster processing (but CPU works too)
 
 ## First-Time Setup
@@ -29,7 +29,16 @@ If the launchers don't work immediately, you may need to:
    - Windows: `venv\Scripts\activate`
    - Linux/Mac: `source venv/bin/activate`
 5. Install dependencies: `pip install -r requirements.txt`
+   - Note: If you encounter dependency resolution issues, try using `pip install --no-deps -r requirements.txt` followed by `pip install torch torchaudio`
 6. Then try the launcher again
+
+### Windows-Specific Notes
+- If you encounter dependency resolution issues during installation, the requirements.txt file contains pinned versions that should work together
+- For Windows users with Python 3.13+:
+  - The updated requirements.txt uses numpy<1.26.0 to avoid build failures on Python 3.13
+  - If you still encounter numpy build errors, try installing with `pip install --only-binary=numpy -r requirements.txt`
+  - Alternatively, consider using Python 3.10-3.12 for better compatibility with all dependencies
+- If you see UnicodeDecodeError during installation, try setting your console to UTF-8: `chcp 65001` before running pip
 
 ## Using the Voice Cloning UI
 

@@ -1,4 +1,14 @@
 import os
+import sys
+import platform
+
+# Check for Python 3.11 specifically
+if not (sys.version_info.major == 3 and sys.version_info.minor == 11):
+    print("ERROR: This application requires Python 3.11 specifically.")
+    print(f"Current Python version: {platform.python_version()}")
+    print("Please install Python 3.11 from https://www.python.org/downloads/release/python-3118/")
+    sys.exit(1)
+
 import torch
 import gradio as gr
 import torchaudio
