@@ -1,0 +1,71 @@
+# Setting up Local Voice Cloning with UI
+
+## Research and Analysis
+- [x] Check Replicate Minimax Voice Cloning model
+- [x] Confirm Minimax Voice Cloning is cloud-based API, not open source
+- [x] Search for open-source alternatives for local voice cloning
+- [x] Evaluate and select the best open-source voice cloning solution
+- [x] Analyze system requirements for the selected solution
+
+## Open Source Options
+- [x] Evaluate CorentinJ/Real-Time-Voice-Cloning
+  - Supports Windows and Linux
+  - Python 3.7 recommended (3.5+ should work)
+  - Requires ffmpeg
+  - Requires PyTorch
+  - Has built-in toolbox UI
+  - GPU recommended but not mandatory
+  - Pretrained models available
+- [x] Evaluate myshell-ai/OpenVoice
+  - MIT License (free for commercial use)
+  - Multi-lingual support (English, Spanish, French, Chinese, Japanese, Korean)
+  - Uses PyTorch
+  - Supports both CPU and GPU (CUDA)
+  - Jupyter notebook interface
+  - Released V2 in April 2024 with better audio quality
+- [x] Evaluate coqui-ai/TTS
+  - Production-ready toolkit
+  - Python 3.9+ required (< 3.12)
+  - Multiple models including XTTS, VITS, YourTTS
+  - Comprehensive API
+  - Built-in server capability
+  - Docker support
+  - Extensive documentation
+  - Active development and community
+- [x] Evaluate JarodMica/ai-voice-cloning
+  - Windows with NVIDIA GPUs and Linux with Docker support
+  - Based on Tortoise TTS
+  - Packaged release available for Windows
+  - Multi-lingual training support
+  - Web UI interface
+  - RVC conversion capability
+  - Python 3.11 required for Windows
+- [x] Evaluate Chatterbox TTS (mentioned in search results)
+  - MIT License (free for commercial use)
+  - State-of-the-art open-source TTS with voice cloning
+  - 0.5B Llama backbone
+  - Emotion exaggeration control
+  - Simple Python API
+  - Gradio web UI apps included
+  - Built-in watermarking
+  - Easy installation via pip
+  - Outperforms ElevenLabs in benchmarks
+
+## Setup Tasks
+- [x] Determine system requirements for local installation
+  - Python 3.8+ required
+  - PyTorch required
+  - CUDA-compatible GPU recommended for faster processing
+  - Works on Windows, Linux, and macOS
+- [x] List required dependencies
+  - chatterbox-tts (via pip)
+  - torchaudio
+  - librosa
+  - gradio (for web UI)
+  - CUDA toolkit (if using GPU)
+- [x] Set up local environment
+- [x] Install necessary dependencies
+- [x] Configure the voice cloning model
+- [x] Create or set up UI for voice cloning
+- [x] Launch and test the voice cloning system
+- [x] Provide access and instructions to user

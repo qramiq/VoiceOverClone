@@ -1,0 +1,7 @@
+torch>=2.0.0
+torchaudio>=2.0.0
+gradio>=4.0.0
+chatterbox-tts>=0.1.0
+librosa>=0.10.0
+numpy>=1.20.0
+soundfile>=0.12.0
